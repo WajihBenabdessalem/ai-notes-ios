@@ -27,7 +27,7 @@ AINotesApp/     # Vues + ViewModels SwiftUI — à glisser dans un projet Xcode 
 ## Démarrage rapide
 
 ```bash
-git clone https://github.com/<votre-user>/ai-notes-ios.git
+git clone https://github.com/WajihBenabdessalem/ai-notes-ios.git
 cd ai-notes-ios
 
 # 1. Tester la logique métier (aucun besoin d'Xcode)
@@ -37,7 +37,7 @@ swift test
 # 2. Intégrer les vues dans un projet Xcode — voir AINotesApp/README.md
 ```
 
-Le backend ([`ai-notes-backend`](https://github.com/<votre-user>/ai-notes-backend)) doit
+Le backend ([`ai-notes-backend`](https://github.com/WajihBenabdessalem/ai-notes-backend)) doit
 tourner en parallèle pour que l'app fonctionne réellement — voir son README pour le lancer
 (`make run`, démarre sur `http://localhost:8000`).
 
