@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ABAFEDE4305981FE00385129 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ABAFEDE2305981FE00385129 /* LICENSE */; };
+		ABAFEDE5305981FE00385129 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABAFEDE3305981FE00385129 /* README.md */; };
+		ABAFEDE93059863A00385129 /* AINotesKit in Frameworks */ = {isa = PBXBuildFile; productRef = ABAFEDE83059863A00385129 /* AINotesKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ABAFEDAA30597C9100385129 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +33,27 @@
 		ABAFED9C30597C8F00385129 /* AI Notes iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Notes iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFEDA930597C9100385129 /* AI Notes iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Notes iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFEDB330597C9100385129 /* AI Notes iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Notes iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAFEDC630597F9F00385129 /* AINotesKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AINotesKit; sourceTree = "<group>"; };
+		ABAFEDE2305981FE00385129 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ABAFEDE3305981FE00385129 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ABAFEDE63059846200385129 /* Exceptions for "AI Notes iOS" folder in "AI Notes iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				README.md,
+			);
+			target = ABAFED9B30597C8F00385129 /* AI Notes iOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		ABAFED9E30597C8F00385129 /* AI Notes iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ABAFEDE63059846200385129 /* Exceptions for "AI Notes iOS" folder in "AI Notes iOS" target */,
+			);
 			path = "AI Notes iOS";
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFEDE93059863A00385129 /* AINotesKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +98,14 @@
 		ABAFED9330597C8F00385129 = {
 			isa = PBXGroup;
 			children = (
+				ABAFEDC630597F9F00385129 /* AINotesKit */,
 				ABAFED9E30597C8F00385129 /* AI Notes iOS */,
 				ABAFEDAC30597C9100385129 /* AI Notes iOSTests */,
 				ABAFEDB630597C9100385129 /* AI Notes iOSUITests */,
 				ABAFED9D30597C8F00385129 /* Products */,
+				ABAFEDE2305981FE00385129 /* LICENSE */,
+				ABAFEDE3305981FE00385129 /* README.md */,
+				ABAFEDE73059863A00385129 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +117,13 @@
 				ABAFEDB330597C9100385129 /* AI Notes iOSUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ABAFEDE73059863A00385129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +146,7 @@
 			);
 			name = "AI Notes iOS";
 			packageProductDependencies = (
+				ABAFEDE83059863A00385129 /* AINotesKit */,
 			);
 			productName = "AI Notes iOS";
 			productReference = ABAFED9C30597C8F00385129 /* AI Notes iOS.app */;
@@ -212,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFEDE4305981FE00385129 /* LICENSE in Resources */,
+				ABAFEDE5305981FE00385129 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +450,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobiledev.AI-Notes-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -445,6 +486,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mobiledev.AI-Notes-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -578,6 +623,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABAFEDE83059863A00385129 /* AINotesKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AINotesKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ABAFED9430597C8F00385129 /* Project object */;
 }
