@@ -2,7 +2,7 @@
 
 Application de notes iOS (SwiftUI) enrichie de fonctionnalités IA — résumé, recherche
 sémantique, chat sur ses propres notes — consommant l'API du dépôt compagnon
-[`ai-notes-backend`](https://github.com/<votre-user>/ai-notes-backend) (FastAPI/Python).
+[`ai-notes-backend`](https://github.com/WajihBenabdessalem/ai-notes-backend) (FastAPI/Python).
 
 Projet réalisé par [Wajih Benabdessalem](https://www.linkedin.com/in/wajihabdessalem)
 dans le cadre d'une transition de Senior Software Engineer (iOS) vers l'AI Engineering — la
